@@ -1,0 +1,61 @@
+body{
+    background:#FFE2E2;
+    color:#FFE2E2;
+}
+.bodyDiv{
+    background:#8785A2;
+    border: 10px #ffdada outset;
+    width: 500px;
+    margin: 50px auto;
+    text-align: center;
+    padding: 30px;
+}
+.clock{
+    font-size: 20px;
+    text-align: center;
+}
+.cal{
+    display: block;
+    margin-top: 30px;
+    text-align: center;
+}
+.calLabNum{
+    font-size: 20px;
+    color:#F6F6F6;
+}
+.calLabOpr{
+    font-size: 20px;
+    color:#FFE2E2;
+}
+.calLabMain{
+    display: block;
+    width: 350px;
+    height: 50px;
+    margin: 0 auto;
+    text-align: center;
+    margin-top: 10px;
+    font-size: 35px;
+    border: 5px #FFE2E2 inset;
+    padding: 5px 10px;
+    background-color: #F6F6F6;
+    color:#8785A2;
+}
+.cal input{
+    margin-top: 40px;
+    font-size: 50px;
+}
+.btn{
+    margin-top: 20px;
+}
+.btn button{
+    font-size: 40px;
+    margin:5px;
+    width: 50px;
+    height: 50px;
+    color:#8785A2;
+    background-color: #F6F6F6;
+    border: 3px #FFE2E2 outset;
+}
+.btn .opr{
+    background-color: #FFE2E2;
+}
