@@ -48,7 +48,7 @@ body{
     margin-top: 20px;
 }
 .btn button{
-    font-size: 40px;
+    font-size: 30px;
     margin:5px;
     width: 50px;
     height: 50px;
@@ -59,7 +59,7 @@ body{
 .btn .opr{
     background-color: #FFE2E2;
 }
-.btn .emz{
-    font-size: 33px;
-    pointer-events: none;
+
+.btn .sml{
+    font-size: 24px;
 }
