@@ -18,6 +18,8 @@ const btn1=document.getElementById('1'),
     btnPlus=document.getElementById('plus'),
     btnCancel=document.getElementById('cancel'),
     btnDivis=document.getElementById('divis'),
+    btnBack=document.getElementById('back'),
+    btnDot=document.getElementById('dot'),
     btnResult=document.getElementById('result');
 
 function KeyEffect(){
@@ -149,6 +151,22 @@ function KeyEffect(){
     function btnResultEfu(){
         btnResult.style.border="3px #FFE2E2 outset";
     }
+    btnBack.addEventListener('mousedown',btnBackEfd);
+    btnBack.addEventListener('mouseup',btnBackEfu);
+    function btnBackEfd(){
+        btnBack.style.border="3px #FFE2E2 inset";
+    }
+    function btnBackEfu(){
+        btnBack.style.border="3px #FFE2E2 outset";
+    }
+    btnDot.addEventListener('mousedown',btnDotEfd);
+    btnDot.addEventListener('mouseup',btnDotEfu);
+    function btnDotEfd(){
+        btnDot.style.border="3px #FFE2E2 inset";
+    }
+    function btnDotEfu(){
+        btnDot.style.border="3px #FFE2E2 outset";
+    }
 }
 function keyListener(){
     btn1.addEventListener('click',btn1fun);
@@ -167,6 +185,8 @@ function keyListener(){
     btnCancel.addEventListener('click',btnCancelfun);
     btnDivis.addEventListener('click',btnDivisfun);
     btnResult.addEventListener('click',btnResultfun);
+    btnBack.addEventListener('click',btnBackfun);
+    btnDot.addEventListener('click',btnDotfun);
 
     function btn1fun() {
         event.preventDefault()
@@ -298,7 +318,7 @@ function keyListener(){
         if(labOpr.innerText=="x"){
             lab.innerText=labNum.innerText * lab.innerText;
         }else if(labOpr.innerText=="-"){
-            lab.innerText=labNum.innerText = lab.innerText;
+            lab.innerText=labNum.innerText - lab.innerText;
         }else if(labOpr.innerText=="+"){
             lab.innerText = Number(labNum.innerText)+Number(lab.innerText);
         }else if(labOpr.innerText=="÷"){
@@ -308,7 +328,14 @@ function keyListener(){
         labNum.innerText = "";
         labOpr.innerText = "";
     }
-
+    function btnBackfun() {
+        event.preventDefault()
+        return lab.innerText = lab.innerText=="CALCULATOR"? "CALCULATOR":lab.innerText.slice(0,-1);
+    }
+    function btnDotfun() {
+        event.preventDefault()
+        return lab.innerText = lab.innerText=="CALCULATOR"? "0." :lab.innerText.includes(".")?lab.innerText:lab.innerText+".";
+    }
 }
 function init(){
     
