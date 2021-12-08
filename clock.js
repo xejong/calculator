@@ -9,7 +9,7 @@ function getTime() {
     const nowMin = date.getMinutes();
     const nowSec = date.getSeconds();
 
-    clock.innerHTML = `${nowYear}년 ${nowMon}월 ${nowDay}일<br>${nowHours<12?`오전 `:`오후 `}${nowHours < 10 ? `0${nowHours}` : nowHours}:${nowMin < 10 ? `0${nowMin}` : nowMin}:${nowSec < 10 ? `0${nowSec}` : nowSec}`;
+    clock.innerHTML = `${nowYear}년 ${nowMon}월 ${nowDay}일<br>${nowHours<12?`오전 `:`오후 `}${nowHours < 10 ? `0${nowHours}` : nowHours >12&&nowHours<23 ? `0${nowHours-12}`:nowHours>=23?`${nowHours-12}`:`${nowHours}`}:${nowMin < 10 ? `0${nowMin}` : nowMin}:${nowSec < 10 ? `0${nowSec}` : nowSec}`;
 }
 
 function init() {
