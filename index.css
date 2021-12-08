@@ -1,61 +1,42 @@
-body{
-    background:#FFE2E2;
-    color:#FFE2E2;
-}
-.bodyDiv{
-    background:#8785A2;
-    border: 10px #ffdada outset;
-    width: 500px;
-    margin: 50px auto;
-    text-align: center;
-    padding: 30px;
-}
-.clock{
-    font-size: 20px;
-    text-align: center;
-}
-.cal{
-    display: block;
-    margin-top: 30px;
-    text-align: center;
-}
-.calLabNum{
-    font-size: 20px;
-    color:#F6F6F6;
-}
-.calLabOpr{
-    font-size: 20px;
-    color:#FFE2E2;
-}
-.calLabMain{
-    display: block;
-    width: 350px;
-    height: 50px;
-    margin: 0 auto;
-    text-align: center;
-    margin-top: 10px;
-    font-size: 35px;
-    border: 5px #FFE2E2 inset;
-    padding: 5px 10px;
-    background-color: #F6F6F6;
-    color:#8785A2;
-}
-.cal input{
-    margin-top: 40px;
-    font-size: 50px;
-}
-.btn{
-    margin-top: 20px;
-}
-.btn button{
-    font-size: 40px;
-    margin:5px;
-    width: 50px;
-    height: 50px;
-    color:#8785A2;
-    background-color: #F6F6F6;
-    border: 3px #FFE2E2 outset;
-}
-.btn .opr{
-    background-color: #FFE2E2;
-}
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>calculator</title>
+        <link rel="stylesheet" href="index.css">
+    </head>
+    <body>
+        <div class="bodyDiv">
+        <div class="clock"></div>
+        <form class="cal">
+            <label class="calLabNum"></label>
+            <label class="calLabOpr"></label><br>
+            <label class="calLabMain">CALCULATOR</label><br>
+            <div class="btn">
+                <button class="opr emz">🍕</button>
+                <button class="opr emz">🍦</button>
+                <button id="divis" class="opr">÷</button>
+                <button id="back" class="opr">↩</button><br>
+                <button id="7">7</button>
+                <button id="8">8</button>
+                <button id="9">9</button>
+                <button id="multi" class="opr">x</button><br>
+                <button id="4">4</button>
+                <button id="5">5</button>
+                <button id="6">6</button>
+                <button id="minus" class="opr">-</button><br>
+                <button id="1">1</button>
+                <button id="2">2</button>
+                <button id="3">3</button>
+                <button id="plus" class="opr">+</button><br>
+                <button id="cancel" class="opr">c</button>
+                <button id="0">0</button>
+                <button id="dot" class="opr">.</button>
+            <button id="result" class="opr">=</button>
+            </div>
+        </form>
+    </div>
+        <script src="clock.js"></script>
+        <script src="calculator.js"></script>
+    </body>
+</html>
