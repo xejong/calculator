@@ -1,22 +1,24 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <meta charset="utf-8">
-        <title>calculator</title>
-        <link rel="stylesheet" href="index.css">
-    </head>
-    <body>
-        <div class="bodyDiv">
+
+<head>
+    <meta charset="utf-8">
+    <title>calculator</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+
+<body>
+    <div class="bodyDiv">
         <div class="clock"></div>
         <form class="cal">
             <label class="calLabNum"></label>
             <label class="calLabOpr"></label><br>
             <label class="calLabMain">CALCULATOR</label><br>
             <div class="btn">
-                <button class="opr emz">🍕</button>
-                <button class="opr emz">🍦</button>
-                <button id="divis" class="opr">÷</button>
-                <button id="back" class="opr">↩</button><br>
+                <button id="square" class="opr sml">x²</button>
+                <button id="root" class="opr sml">²√x</button>
+                <button id="divis" class="opr sml">÷</button>
+                <button id="back" class="opr sml">↩</button><br>
                 <button id="7">7</button>
                 <button id="8">8</button>
                 <button id="9">9</button>
@@ -32,11 +34,12 @@
                 <button id="cancel" class="opr">c</button>
                 <button id="0">0</button>
                 <button id="dot" class="opr">.</button>
-            <button id="result" class="opr">=</button>
+                <button id="result" class="opr">=</button>
             </div>
         </form>
     </div>
-        <script src="clock.js"></script>
-        <script src="calculator.js"></script>
-    </body>
+    <script src="clock.js"></script>
+    <script src="calculator.js"></script>
+</body>
+
 </html>
